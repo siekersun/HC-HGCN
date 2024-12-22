@@ -1,9 +1,8 @@
 import torch
 import torch.nn as nn
 from torchvision import models
-from model.LCFN_model import LCFN
+from model.HGNN_model import HGNN
 from model.Resnet50 import resnet50_3d_cbam
-from resnet import generate_model
 import torchvision.models.resnet
 
 
