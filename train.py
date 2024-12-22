@@ -15,7 +15,7 @@ import pandas as pd
 from data.dataset_loader import dataset_loader
 from torch_geometric.loader import DataLoader
 from sklearn.metrics import precision_recall_fscore_support
-from model.pretrain_model import LungPrediction
+from model.model import LungPrediction
 from args import args
 from sklearn.metrics import precision_recall_fscore_support, roc_auc_score, average_precision_score, confusion_matrix
 

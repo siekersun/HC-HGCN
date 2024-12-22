@@ -28,7 +28,7 @@ parser.add_argument('--hidden_size', type=int,
 parser.add_argument('--output_dir', type=str,
                     default='output', help='output_dir')
 parser.add_argument('--output_name', type=str,
-                    default='resnet+cbam+clinical', help='class number')
+                    default='pre', help='class number')
 parser.add_argument('--pre_train', type=bool,
                     default=True)
 
