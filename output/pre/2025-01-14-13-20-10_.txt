@@ -1,0 +1,2 @@
+[13:20:10.467] Namespace(root_path='data/cropped_data/', pretrain_fold='data/pretrain', num_classes=2, batch_size=32, layer_num=1, phi=100, max_epoch=128, base_lr=0.01, seed=666, hidden_size=128, output_dir='output', output_name='pre', pre_train=True)
+[13:20:10.467] 19 iterations per epoch. 2432 max iterations 

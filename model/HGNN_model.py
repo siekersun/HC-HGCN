@@ -58,21 +58,11 @@ class HGNN(nn.Module):
                 init.constant_(m.bias, 0)
     def forward(self, x_all, edge_index, p):
 
-        edge = 1/torch.sum(edge_index.T, dim=1, keepdim=True)
-        Norm_edge = edge * edge_index.T
-
-        edge_attr = torch.diag(
-            torch.tensor([0.665, 1.072, 0.365, 0.786, 1.051, 1.062, 0.648, 0.522, -1.391])).float().cuda()
-        # edge_attr = torch.diag(
-        #     torch.ones(9)).float().cuda()
 
         x = self.fc1(x_all)
         # x = self.fc2(x)
         h = x
         for i in range(self.layer_num):
-            # #HGAT:
-            # edge_feature = Norm_edge @ h
-            # h = self.trans[i](h, edge_feature, edge_feature, edge_index, edge_attr)
 
             ##LCFN
             # h = p @ self.filters[i] @ p.T @ h

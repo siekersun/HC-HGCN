@@ -6,7 +6,7 @@ import torch
 import tqdm
 from torch_geometric.data import DataLoader
 
-from model.pretrain_model import LungPrediction
+from model.model import LungPrediction
 from args import args
 from data.dataset_loader import dataset_loader
 

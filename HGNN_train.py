@@ -16,7 +16,6 @@ from data.dataset_loader import dataset_loader
 from torch_geometric.loader import DataLoader
 from sklearn.metrics import precision_recall_fscore_support
 from model.HGNN_model import HGNN
-# from model.model import LCFN
 from args import args
 from data.pretrain.pretrain_loader import pretrain_loader
 from sklearn.metrics import precision_recall_fscore_support, roc_auc_score, average_precision_score, confusion_matrix
